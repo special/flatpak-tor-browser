@@ -22,12 +22,18 @@
                 {
                     "type": "patch",
                     "path": "xdg-profile-path.patch"
+                },
+                {
+                    "type": "file",
+                    "path": "custom.tor.browser.desktop"
                 }
             ],
             "buildsystem": "simple",
             "build-commands": [
                 "cp Browser/TorBrowser/Data/Tor/torrc-defaults Browser/TorBrowser/Tor/",
-                "cp -R Browser /app"
+                "cp -R Browser /app",
+                "install -D Browser/browser/chrome/icons/default/default128.png /app/share/icons/hicolor/128x128/apps/custom.tor.browser.png",
+                "install -D -t /app/share/applications/ custom.tor.browser.desktop"
             ]
         }
     ]
