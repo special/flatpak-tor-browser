@@ -1,0 +1,34 @@
+{
+    "app-id": "custom.tor.browser",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.24",
+    "sdk": "org.gnome.Sdk",
+    "command": "/app/Browser/start-tor-browser",
+    "finish-args": [
+        "--socket=x11",
+        "--share=ipc",
+        "--device=dri",
+        "--share=network"
+    ],
+    "modules": [
+        {
+            "name": "torbrowser",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.torproject.org/dist/torbrowser/8.0.3/tor-browser-linux64-8.0.3_en-US.tar.xz",
+                    "sha256": "ff116446e66af9663aa0cb9a01b05f906ff50aed00672fbfcc0b31e8358494a5"
+                },
+                {
+                    "type": "patch",
+                    "path": "xdg-profile-path.patch"
+                }
+            ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "cp Browser/TorBrowser/Data/Tor/torrc-defaults Browser/TorBrowser/Tor/",
+                "cp -R Browser /app"
+            ]
+        }
+    ]
+}

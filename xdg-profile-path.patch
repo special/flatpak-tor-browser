@@ -1,0 +1,43 @@
+--- a/Browser/start-tor-browser	1999-12-31 16:00:00.000000000 -0800
++++ b/Browser/start-tor-browser	2018-12-02 17:56:33.600920831 -0800
+@@ -351,25 +351,35 @@
+ #
+ # The --class parameter was added to fix bug 11102.
+
++export PROFILE_PATH=${XDG_DATA_HOME}/Browser/profile.default
++
++if [ ! -d ${PROFILE_PATH} ]; then
++    cp -R TorBrowser/Data/Browser ${XDG_DATA_HOME}
++fi
++
++if [ ! -d ${XDG_DATA_HOME}/Tor ]; then
++    cp -R TorBrowser/Data/Tor ${XDG_DATA_HOME}
++fi
++
+ if [ "$show_usage" -eq 1 ]; then
+     # Display Firefox help, then our help
+     TOR_CONTROL_PASSWD=${TOR_CONTROL_PASSWD} ./firefox --class "Tor Browser" \
+-        -profile TorBrowser/Data/Browser/profile.default --help 2>/dev/null
++        -profile ${PROFILE_PATH} --help 2>/dev/null
+     tbb_usage
+ elif [ "$detach" -eq 1 ] ; then
+     TOR_CONTROL_PASSWD=${TOR_CONTROL_PASSWD} ./firefox --class "Tor Browser" \
+-       -profile TorBrowser/Data/Browser/profile.default "${@}" > "$logfile" 2>&1 </dev/null &
++       -profile ${PROFILE_PATH} "${@}" > "$logfile" 2>&1 </dev/null &
+     disown "$!"
+ elif [ "$log_output" -eq 1 -a "$show_output" -eq 1 ]; then
+     TOR_CONTROL_PASSWD=${TOR_CONTROL_PASSWD} ./firefox --class "Tor Browser" \
+-        -profile TorBrowser/Data/Browser/profile.default "${@}" 2>&1 </dev/null | \
++        -profile ${PROFILE_PATH} "${@}" 2>&1 </dev/null | \
+         tee "$logfile"
+ elif [ "$show_output" -eq 1 ]; then
+     TOR_CONTROL_PASSWD=${TOR_CONTROL_PASSWD} ./firefox --class "Tor Browser" \
+-        -profile TorBrowser/Data/Browser/profile.default "${@}" < /dev/null
++        -profile ${PROFILE_PATH} "${@}" < /dev/null
+ else
+     TOR_CONTROL_PASSWD=${TOR_CONTROL_PASSWD} ./firefox --class "Tor Browser" \
+-        -profile TorBrowser/Data/Browser/profile.default "${@}" > "$logfile" 2>&1 </dev/null
++        -profile ${PROFILE_PATH} "${@}" > "$logfile" 2>&1 </dev/null
+ fi
+
+ exit $?
