@@ -17,8 +17,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.torproject.org/dist/torbrowser/8.0.6/tor-browser-linux64-8.0.6_en-US.tar.xz",
-                    "sha256": "c711dd6eba6f31bfc389dcee182e2f500a614a5e962efc227c891c7e51162392"
+                    "url": "https://www.torproject.org/dist/torbrowser/8.0.7/tor-browser-linux64-8.0.7_en-US.tar.xz",
+                    "sha256": "bebe0f457f26723687073704ab4b072b696928dccdc1c73ff42d22f2688432e7"
                 },
                 {
                     "type": "patch",
