@@ -17,8 +17,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.torproject.org/dist/torbrowser/9.5/tor-browser-linux64-9.5_en-US.tar.xz",
-                    "sha256": "08fca06954b1119291b1d298f59683e9b44bd428db1215a3c562f337bff88e50"
+                    "url": "https://www.torproject.org/dist/torbrowser/9.5.1/tor-browser-linux64-9.5.1_en-US.tar.xz",
+                    "sha256": "ad91c18306534c520eb56a5984efec8c62c83f119f9d462c3aae1429f645bba3"
                 },
                 {
                     "type": "patch",
