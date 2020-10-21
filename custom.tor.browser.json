@@ -17,8 +17,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.torproject.org/dist/torbrowser/10.0.1/tor-browser-linux64-10.0.1_en-US.tar.xz",
-                    "sha256": "98c98e726493d6e33a7e9db1cccf722fd07b90a3506fe1f3e52d51a7026de130"
+                    "url": "https://www.torproject.org/dist/torbrowser/10.0.2/tor-browser-linux64-10.0.2_en-US.tar.xz",
+                    "sha256": "241243302e385528757a45cfc6c56f164e67381f11a38506b43df6a46d7078ff"
                 },
                 {
                     "type": "patch",
