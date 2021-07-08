@@ -17,8 +17,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.torproject.org/dist/torbrowser/10.0.18/tor-browser-linux64-10.0.18_en-US.tar.xz",
-                    "sha256": "24504af687ccf4566f1bbc83a0c11430745549dc205b3f66755c8d37eb18d196"
+                    "url": "https://www.torproject.org/dist/torbrowser/10.5/tor-browser-linux64-10.5_en-US.tar.xz",
+                    "sha256": "755f2a559da744c649a84aa0b3d011276a5c5f324aacddcee0c26660b49709b7"
                 },
                 {
                     "type": "patch",
@@ -42,8 +42,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.110.tar.gz",
-                    "sha256": "7ce4760cf66c69148f6bd6c92feaabb8812dee30846b24cd0f7395c436d7e825"
+                    "url": "https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz",
+                    "sha256": "7d550dccdfcd286e33895501829ed971eeb65c614e73aadb4a08aeef719b143a"
                 }
             ],
             "buildsystem": "autotools"
