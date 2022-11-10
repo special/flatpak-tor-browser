@@ -18,8 +18,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.torproject.org/dist/torbrowser/11.5.6/tor-browser-linux64-11.5.6_en-US.tar.xz",
-                    "sha256": "0d3318ea7ec65e890ecfa592aef154902eb84a2ba8d59cbcd00e140e896620c1"
+                    "url": "https://www.torproject.org/dist/torbrowser/11.5.7/tor-browser-linux64-11.5.7_en-US.tar.xz",
+                    "sha256": "2b9d13f457bab4cb8fd49e607f02bd7ffdb965e6a443dbec262e0838f6ba7cc9"
                 },
                 {
                     "type": "patch",
