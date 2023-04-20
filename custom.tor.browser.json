@@ -1,7 +1,7 @@
 {
     "app-id": "custom.tor.browser",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "43",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "/app/Browser/start-tor-browser",
     "finish-args": [
@@ -18,8 +18,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.torproject.org/dist/torbrowser/12.0.4/tor-browser-linux64-12.0.4_ALL.tar.xz",
-                    "sha256": "553d1b0f8bfc481ab47a6158b3110bade638a3ebbe1507f20449d233399177b6"
+                    "url": "https://www.torproject.org/dist/torbrowser/12.0.5/tor-browser-linux64-12.0.5_ALL.tar.xz",
+                    "sha256": "578054b37d21d3e00a36e36c1ee46b8835c9d19ceb22c8364989f818f652e87b"
                 },
                 {
                     "type": "patch",
